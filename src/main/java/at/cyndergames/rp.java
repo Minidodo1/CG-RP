@@ -7,7 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
  * <p>
  * #                            #
  * #   Copyright by Minidodo    #
- * #   Copyright by Scoocyjuice #
+ * #   and Scoocyjuice          #
  * #                            #
  */
 public class rp extends JavaPlugin {
