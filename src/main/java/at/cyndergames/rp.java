@@ -10,15 +10,15 @@ import org.bukkit.plugin.java.JavaPlugin;
  * #   Copyright by Scoocyjuice #
  * #                            #
  */
-public class rp extends JavaPlugin{
+public class rp extends JavaPlugin {
+
+
+    @Override
+    public void onEnable() {
+    }
     @Override
     public void onDisable() {
         System.out.println("starting...");
         super.onDisable();
-    }
-
-    @Override
-    public void onEnable() {
-        super.onEnable();
     }
 }
