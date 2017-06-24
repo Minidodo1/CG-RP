@@ -5,9 +5,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 /**
  * Created by Minidodo on 24.06.2017.
  * <p>
- * #                           #
- * #   Copyright by Minidodo   #
- * #                           #
+ * #                            #
+ * #   Copyright by Minidodo    #
+ * #   Copyright by Scoocyjuice #
+ * #                            #
  */
 public class rp extends JavaPlugin{
     @Override
