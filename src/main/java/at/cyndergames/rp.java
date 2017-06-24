@@ -12,6 +12,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class rp extends JavaPlugin{
     @Override
     public void onDisable() {
+        System.out.println("starting...");
         super.onDisable();
     }
 
