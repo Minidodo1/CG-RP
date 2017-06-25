@@ -1,5 +1,7 @@
 package at.cyndergames.tickets;
 
+import at.cyndergames.API.TicketAutomat;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -10,7 +12,7 @@ import org.bukkit.plugin.java.JavaPlugin;
  * #   and Scoocyjuice        #
  * #                          #
  */
-public class ticket extends JavaPlugin{
+public class ticket extends JavaPlugin implements TicketAutomat{
     @Override
     public void onEnable() {
         super.onEnable();
@@ -20,4 +22,5 @@ public class ticket extends JavaPlugin{
     public void onDisable() {
         super.onDisable();
     }
+
 }

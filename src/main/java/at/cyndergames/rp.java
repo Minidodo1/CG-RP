@@ -1,5 +1,6 @@
 package at.cyndergames;
 
+import at.cyndergames.API.sysout;
 import at.cyndergames.übersetzungen.de_DE;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -13,10 +14,9 @@ import org.bukkit.plugin.java.JavaPlugin;
  */
 public class rp extends JavaPlugin {
 
-
     @Override
     public void onEnable() {
-        System.out.println(de_DE.PREFIX_LOADING);
+        new sysout(de_DE.PREFIX_LOADING +" "+ de_DE.START);
     }
     @Override
     public void onDisable() {
