@@ -1,4 +1,4 @@
-package at.cyndergames.Interfaces;
+package at.cyndergames.API;
 
 /**
  * Created by Scoocyjuice on 25.06.2017.

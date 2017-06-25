@@ -1,6 +1,5 @@
 package at.cyndergames.tickets;
 
-import at.cyndergames.Interfaces.Money;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**

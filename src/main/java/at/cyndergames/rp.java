@@ -1,7 +1,7 @@
 package at.cyndergames;
 
+import at.cyndergames.übersetzungen.de_DE;
 import org.bukkit.plugin.java.JavaPlugin;
-import at.cyndergames.Enums.de_DE;
 
 /**
  * Created by Minidodo on 24.06.2017.
@@ -16,7 +16,7 @@ public class rp extends JavaPlugin {
 
     @Override
     public void onEnable() {
-    System.out.println(de_DE.LOADING);
+        System.out.println(de_DE.PREFIX_LOADING);
     }
     @Override
     public void onDisable() {

@@ -1,4 +1,4 @@
-package at.cyndergames.Interfaces;
+package at.cyndergames.API;
 
 /**
  * Created by Minidodo on 25.06.2017.
