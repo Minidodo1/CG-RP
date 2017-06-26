@@ -8,6 +8,8 @@ package at.cyndergames.API;
  * #   and Scoocyjuice        #
  * #                          #
  */
+@Deprecated
+@SuppressWarnings("unused")
 public interface Money {
     double getMoney(Object player);
     double setMoney(Object player, long money);
@@ -15,4 +17,6 @@ public interface Money {
     double removeMoney(Object player, long money);
     double createAccount(Object player);
 
+
 }
+
