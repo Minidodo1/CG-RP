@@ -15,19 +15,16 @@ public class MoneyAPI {
             return 0;
         }
 
-        public double setMoney(Object player, long money) {
-            return 0;
-        }
+        public void setMoney(Object player, long money) {
+                    }
 
-        public double addMoney(Object player, long money) {
-            return 0;
-        }
+        public void addMoney(Object player, long money) {
+                    }
 
-        public double removeMoney(Object player, long money) {
-            return 0;
-        }
+        public void removeMoney(Object player, long money) {
+                    }
 
-        public double createAccount(Object player) {
-            return 0;
+        public void createAccount(Object player) {
+            
         }
 }
