@@ -12,5 +12,6 @@
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="spigot-api-1.12-R0.1-SNAPSHOT-shaded" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="craftbukkit-1.12" level="project" />
   </component>
 </module>

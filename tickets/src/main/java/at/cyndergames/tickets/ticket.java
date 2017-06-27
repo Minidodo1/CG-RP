@@ -1,7 +1,6 @@
 package at.cyndergames.tickets;
 
 import at.cyndergames.API.TicketAutomat;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
