@@ -11,5 +11,12 @@
 
     <artifactId>Bank</artifactId>
 
+    <dependencies>
 
+        <dependency>
+            <groupId>Minidodo</groupId>
+            <artifactId>Core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>

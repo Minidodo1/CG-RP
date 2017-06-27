@@ -8,13 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Bank" />
         <module name="CG" />
+        <module name="CG (1)" />
+        <module name="Core" />
         <module name="tickets" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="Bank" target="1.5" />
-      <module name="CG" target="1.5" />
-      <module name="CG1" target="1.5" />
+      <module name="Core" target="1.5" />
       <module name="tickets" target="1.5" />
     </bytecodeTargetLevel>
   </component>

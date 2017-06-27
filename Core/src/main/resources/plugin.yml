@@ -1,8 +1,7 @@
-name: Ticketsystem
+name: Core
 version: 0.0.1
 description: Cyndergames Core
 author: Minidodo
 authors: [Scoocyjuice]
-depends: [Core]
 website: https://vm1-debian.cyndergames.at/
-main: at.cyndergames.ticket
+main: at.rp

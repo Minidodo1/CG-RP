@@ -1,5 +1,6 @@
-package at.cyndergames.tickets;
+package at.cyndergames;
 
+import at.cyndergames.API.sysout;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -13,7 +14,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class ticket extends JavaPlugin {
     @Override
     public void onEnable() {
+        new sysout("Hello, from tickets!");
         super.onEnable();
+
     }
 
     @Override

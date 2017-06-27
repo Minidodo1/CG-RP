@@ -11,9 +11,10 @@
 
     <artifactId>tickets</artifactId>
 <dependencies>
+
     <dependency>
         <groupId>Minidodo</groupId>
-        <artifactId>CG</artifactId>
+        <artifactId>Core</artifactId>
         <version>1.0-SNAPSHOT</version>
     </dependency>
 </dependencies>
