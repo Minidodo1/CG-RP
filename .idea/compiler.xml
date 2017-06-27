@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Bank" />
+        <module name="CG" />
         <module name="tickets" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Bank" target="1.5" />
       <module name="CG" target="1.5" />
+      <module name="CG1" target="1.5" />
       <module name="tickets" target="1.5" />
     </bytecodeTargetLevel>
   </component>
