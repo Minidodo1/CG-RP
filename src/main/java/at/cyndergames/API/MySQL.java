@@ -29,7 +29,6 @@ public class MySQL {
         cfg.addDefault(db + "user", "user");
         cfg.addDefault(db + "password", "password");
         cfg.addDefault(db + "database", "database");
-        cfg.addDefault(db + "broadcastconnection", false);
         cfg.options().copyDefaults(true);
 
         config.saveConfig();
@@ -43,13 +42,17 @@ public class MySQL {
         this.conn = this.openConnection();
     }
 
-    public Connection openConnection() throws Exception {
+    public Connection openConnection() {
+    try {
+            Class.forName("com.mysql.jdbc.Driver");
+            conn = DriverManager.getConnection("jdbc:mysql://" + this.host + ":" + this.port + "/" + this.database, this.user, this.password);
 
-        Class.forName("com.mysql.jdbc.Driver");
-        conn = DriverManager.getConnection("jdbc:mysql://"+this.host+":"+this.port+"/"+this.database, this.user, this.password);
+            this.conn = DriverManager.getConnection("jdbc:mysql://" + this.host + ":" + this.port + "/" + this.database, this.user, this.password);
 
-        this.conn = DriverManager.getConnection("jdbc:mysql://"+this.host+":"+this.port+"/"+this.database, this.user, this.password);
-        return conn;
+            }catch(Exception e){
+        new sysout(e.getMessage());
+        }
+    return conn;
     }
     public Connection getConnection(){
         return this.conn;
@@ -63,7 +66,7 @@ public class MySQL {
             return false;
         }
     }
-    public void queryUpdate(String query) throws Exception{
+    public void queryUpdate(String query){
         openConnection();
         Connection conn = this.conn;
         PreparedStatement ps = null;
@@ -73,8 +76,12 @@ public class MySQL {
         } catch (SQLException e) {
             new syserr("[ERROR] SQLExeption:queryupdate");
         }finally{
-            this.closeResources(null, ps);
-        }
+            try {
+                this.closeResources(null, ps);
+            }catch (Exception e){
+                new sysout(e.getMessage());
+            }
+            }
     }
     public void closeResources(ResultSet rs, PreparedStatement ps) throws SQLException{
         if(rs != null){
