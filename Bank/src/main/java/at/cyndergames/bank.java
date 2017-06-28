@@ -25,7 +25,6 @@ public class bank extends JavaPlugin {
 
         defaults();
         new sysout(languages.get(variablen.PREFIX_LOADING) +" "+ languages.get(variablen.START));
-        this.mAPI = new MoneyAPI();
 
     }
     @Override

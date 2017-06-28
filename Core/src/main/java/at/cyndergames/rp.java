@@ -19,13 +19,15 @@ import java.io.File;
 public class rp extends JavaPlugin {
     private de_DE languages = new de_DE();
     private MoneyAPI mAPI;
+    private MySQL sql;
     @Override
     public void onEnable() {
         languages.createconf();
 
         defaults();
         new sysout(languages.get(variablen.PREFIX_LOADING) +" "+ languages.get(variablen.START));
-        this.mAPI = new MoneyAPI();
+        this.sql = new MySQL();
+        this.mAPI = new MoneyAPI(this);
 
     }
     @Override
@@ -44,5 +46,9 @@ public class rp extends JavaPlugin {
     @SuppressWarnings("unused")
     public MoneyAPI getmAPI() {
         return mAPI;
+    }
+    @SuppressWarnings("unused")
+    public MySQL getSQL(){
+        return sql;
     }
 }

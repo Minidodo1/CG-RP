@@ -21,7 +21,7 @@ public class MySQL {
     private config config = new config();
     private FileConfiguration cfg;
 
-    public MySQL() throws Exception{
+    public MySQL(){
         cfg = config.getConfig(new File("configs/","database.cfg"));
         String db = "MySQL.";
         cfg.addDefault(db + "host", "localhost");
@@ -38,7 +38,6 @@ public class MySQL {
         this.user = cfg.getString(db +"user");
         this.password = cfg.getString(db +"password");
         this.database = cfg.getString(db +"database");
-
         this.conn = this.openConnection();
     }
 

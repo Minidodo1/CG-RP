@@ -10,13 +10,10 @@
         <module name="CG" />
         <module name="CG (1)" />
         <module name="Core" />
+        <module name="Money" />
         <module name="tickets" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
-      <module name="Bank" target="1.5" />
-      <module name="Core" target="1.5" />
-      <module name="tickets" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8" />
   </component>
 </project>
