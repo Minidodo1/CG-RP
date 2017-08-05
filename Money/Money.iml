@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="IntelliGuard" name="Obfuscation">
+      <configuration>
+        <option name="yGuardJar" value="E:\Programme\yguard-2.6\lib\yguard.jar" />
+        <option name="jarConfig">
+          <JarConfig />
+        </option>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -11,7 +21,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="craftbukkit-1.12" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="craftbukkit-1.12" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="spigot-api-1.12-R0.1-SNAPSHOT-shaded" level="application" />
     <orderEntry type="module" module-name="Core" />
   </component>
 </module>

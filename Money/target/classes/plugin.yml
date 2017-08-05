@@ -1,0 +1,8 @@
+name: Money
+version: 0.0.1
+description: Cyndergames Money
+author: Minidodo
+authors: [Scoocyjuice]
+depends: [Core]
+website: https://vm1-debian.cyndergames.at/
+main: at.cyndergames.money

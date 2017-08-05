@@ -24,7 +24,8 @@ public class de_DE {
             START;
     private HashMap<String, String> hm = new HashMap<String, String>();
     private config config = new config();
-    private FileConfiguration cfg = config.getConfig(new File("languages/", "de_DE.yml"));
+    private String Language = config.getConfig(new File("configs/Core/","config.yml")).getString("Language");
+    private FileConfiguration cfg = config.getConfig(new File("languages/", Language+".yml"));
     public void createconf() {
 
         cfg.addDefault("PREFIX", "§6[§2CG§6-§2Core§6]");
