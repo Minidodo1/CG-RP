@@ -312,7 +312,7 @@ public class PlayerData implements Player{
     }
 
     public boolean isPlayerTimeRelative() {
-        return isPlayerTimeRelative();
+        return p.isPlayerTimeRelative();
     }
 
     public void resetPlayerTime() {
@@ -467,770 +467,785 @@ public class PlayerData implements Player{
     }
 
     public float getFlySpeed() {
-        return 0;
+        return p.getFlySpeed();
     }
 
     public float getWalkSpeed() {
-        return 0;
+        return p.getWalkSpeed();
     }
 
+    @Deprecated
     public void setTexturePack(String s) {
-
+        p.setTexturePack(s);
     }
 
     public void setResourcePack(String s) {
-
+        p.setResourcePack(s);
     }
 
     public void setResourcePack(String s, byte[] bytes) {
-
+        p.setResourcePack(s, bytes);
     }
 
     public Scoreboard getScoreboard() {
-        return null;
+        return p.getScoreboard();
     }
 
     public void setScoreboard(Scoreboard scoreboard) {
-
+        p.setScoreboard(scoreboard);
     }
 
     public boolean isHealthScaled() {
-        return false;
+        return p.isHealthScaled();
     }
 
     public void setHealthScaled(boolean b) {
-
+        p.setHealthScaled(b);
     }
 
     public void setHealthScale(double v) {
-
+        p.setHealthScale(v);
     }
 
     public double getHealthScale() {
-        return 0;
+        return p.getHealthScale();
     }
 
     public Entity getSpectatorTarget() {
-        return null;
+        return p.getSpectatorTarget();
     }
 
     public void setSpectatorTarget(Entity entity) {
-
+        p.setSpectatorTarget(entity);
     }
 
+    @Deprecated
     public void sendTitle(String s, String s1) {
-
+        p.sendTitle(s, s1);
     }
 
     public void sendTitle(String s, String s1, int i, int i1, int i2) {
-
+        p.sendTitle(s, s1, i, i1, i2);
     }
 
     public void resetTitle() {
-
+        p.resetTitle();
     }
 
     public void spawnParticle(Particle particle, Location location, int i) {
-
+        p.spawnParticle(particle, location, i);
     }
 
     public void spawnParticle(Particle particle, double v, double v1, double v2, int i) {
-
+        p.spawnParticle(particle, v, v1, v2, i);
     }
 
     public <T> void spawnParticle(Particle particle, Location location, int i, T t) {
-
+        p.spawnParticle(particle, location, i, t);
     }
 
     public <T> void spawnParticle(Particle particle, double v, double v1, double v2, int i, T t) {
-
+        p.spawnParticle(particle, v, v1, v2, i, t);
     }
 
     public void spawnParticle(Particle particle, Location location, int i, double v, double v1, double v2) {
-
+        p.spawnParticle(particle, location, i, v, v1, v2);
     }
 
     public void spawnParticle(Particle particle, double v, double v1, double v2, int i, double v3, double v4, double v5) {
-
+        p.spawnParticle(particle, v, v1, v2, i, v3, v4, v5);
     }
 
     public <T> void spawnParticle(Particle particle, Location location, int i, double v, double v1, double v2, T t) {
-
+        p.spawnParticle(particle, location, i, v, v1, v2, t);
     }
 
     public <T> void spawnParticle(Particle particle, double v, double v1, double v2, int i, double v3, double v4, double v5, T t) {
-
+        p.spawnParticle(particle, v, v1, v2, i, v3, v4, v5, t);
     }
 
     public void spawnParticle(Particle particle, Location location, int i, double v, double v1, double v2, double v3) {
-
+        p.spawnParticle(particle, location, i, v, v1, v2, v3);
     }
 
     public void spawnParticle(Particle particle, double v, double v1, double v2, int i, double v3, double v4, double v5, double v6) {
-
+        p.spawnParticle(particle, v, v1, v2, i, v3, v4, v5, v6);
     }
 
     public <T> void spawnParticle(Particle particle, Location location, int i, double v, double v1, double v2, double v3, T t) {
-
+        p.spawnParticle(particle, location, i, v, v1, v2, v3, t);
     }
 
     public <T> void spawnParticle(Particle particle, double v, double v1, double v2, int i, double v3, double v4, double v5, double v6, T t) {
-
+        p.spawnParticle(particle, v, v1, v2, i, v3, v4, v5, v6, t);
     }
 
     public AdvancementProgress getAdvancementProgress(Advancement advancement) {
-        return null;
+        return p.getAdvancementProgress(advancement);
     }
 
     public String getLocale() {
-        return null;
+        return p.getLocale();
     }
 
     public Map<String, Object> serialize() {
-        return null;
+        return p.serialize();
     }
 
     public String getName() {
-        return null;
+        return p.getName();
     }
 
     public PlayerInventory getInventory() {
-        return null;
+        return p.getInventory();
     }
 
     public Inventory getEnderChest() {
-        return null;
+        return p.getEnderChest();
     }
 
     public MainHand getMainHand() {
-        return null;
+        return p.getMainHand();
     }
 
     public boolean setWindowProperty(InventoryView.Property property, int i) {
-        return false;
+        return p.setWindowProperty(property, i);
     }
 
     public InventoryView getOpenInventory() {
-        return null;
+        return p.getOpenInventory();
     }
 
     public InventoryView openInventory(Inventory inventory) {
-        return null;
+        return p.openInventory(inventory);
     }
 
     public InventoryView openWorkbench(Location location, boolean b) {
-        return null;
+        return p.openWorkbench(location, b);
     }
 
     public InventoryView openEnchanting(Location location, boolean b) {
-        return null;
+        return p.openEnchanting(location, b);
     }
 
     public void openInventory(InventoryView inventoryView) {
-
+        p.openInventory(inventoryView);
     }
 
     public InventoryView openMerchant(Villager villager, boolean b) {
-        return null;
+        return p.openMerchant(villager, b);
     }
 
     public InventoryView openMerchant(Merchant merchant, boolean b) {
-        return null;
+        return p.openMerchant(merchant, b);
     }
 
     public void closeInventory() {
-
+        p.closeInventory();
     }
 
+    @Deprecated
     public ItemStack getItemInHand() {
-        return null;
+        return p.getItemInHand();
     }
 
+    @Deprecated
     public void setItemInHand(ItemStack itemStack) {
-
+        p.setItemInHand(itemStack);
     }
 
     public ItemStack getItemOnCursor() {
-        return null;
+        return p.getItemOnCursor();
     }
 
     public void setItemOnCursor(ItemStack itemStack) {
-
+        p.setItemOnCursor(itemStack);
     }
 
     public boolean hasCooldown(Material material) {
-        return false;
+        return p.hasCooldown(material);
     }
 
     public int getCooldown(Material material) {
-        return 0;
+        return p.getCooldown(material);
     }
 
     public void setCooldown(Material material, int i) {
-
+        p.setCooldown(material, i);
     }
 
     public boolean isSleeping() {
-        return false;
+        return p.isSleeping();
     }
 
     public int getSleepTicks() {
-        return 0;
+        return p.getSleepTicks();
     }
 
     public GameMode getGameMode() {
-        return null;
+        return p.getGameMode();
     }
 
     public void setGameMode(GameMode gameMode) {
-
+        p.setGameMode(gameMode);
     }
 
     public boolean isBlocking() {
-        return false;
+        return p.isBlocking();
     }
 
     public boolean isHandRaised() {
-        return false;
+        return p.isHandRaised();
     }
 
     public int getExpToLevel() {
-        return 0;
+        return p.getExpToLevel();
     }
 
+    @Deprecated
     public Entity getShoulderEntityLeft() {
-        return null;
+        return p.getShoulderEntityLeft();
     }
 
+    @Deprecated
     public void setShoulderEntityLeft(Entity entity) {
-
+        p.setShoulderEntityLeft(entity);
     }
 
+    @Deprecated
     public Entity getShoulderEntityRight() {
-        return null;
+        return p.getShoulderEntityRight();
     }
 
+    @Deprecated
     public void setShoulderEntityRight(Entity entity) {
-
+        p.setShoulderEntityLeft(entity);
     }
 
     public double getEyeHeight() {
-        return 0;
+        return p.getEyeHeight();
     }
 
     public double getEyeHeight(boolean b) {
-        return 0;
+        return p.getEyeHeight(b);
     }
 
     public Location getEyeLocation() {
-        return null;
+        return p.getEyeLocation();
     }
 
     public List<Block> getLineOfSight(Set<Material> set, int i) {
-        return null;
+        return p.getLineOfSight(set, i);
     }
 
+    @Deprecated
     public Block getTargetBlock(HashSet<Byte> hashSet, int i) {
-        return null;
+        return p.getTargetBlock(hashSet, i);
     }
 
     public Block getTargetBlock(Set<Material> set, int i) {
-        return null;
+        return p.getTargetBlock(set, i);
     }
 
+    @Deprecated
     public List<Block> getLastTwoTargetBlocks(HashSet<Byte> hashSet, int i) {
-        return null;
+        return p.getLastTwoTargetBlocks(hashSet, i);
     }
 
     public List<Block> getLastTwoTargetBlocks(Set<Material> set, int i) {
-        return null;
+        return p.getLastTwoTargetBlocks(set, i);
     }
 
     public int getRemainingAir() {
-        return 0;
+        return p.getRemainingAir();
     }
 
     public void setRemainingAir(int i) {
-
+        p.setRemainingAir(i);
     }
 
     public int getMaximumAir() {
-        return 0;
+        return p.getMaximumAir();
     }
 
     public void setMaximumAir(int i) {
-
+        p.setMaximumAir(i);
     }
 
     public int getMaximumNoDamageTicks() {
-        return 0;
+        return p.getMaximumNoDamageTicks();
     }
 
     public void setMaximumNoDamageTicks(int i) {
-
+        p.setMaximumNoDamageTicks(i);
     }
 
     public double getLastDamage() {
-        return 0;
+        return p.getLastDamage();
     }
 
     public void setLastDamage(double v) {
-
+        p.setLastDamage(v);
     }
 
     public int getNoDamageTicks() {
-        return 0;
+        return p.getNoDamageTicks();
     }
 
     public void setNoDamageTicks(int i) {
-
+        p.setNoDamageTicks(i);
     }
 
     public Player getKiller() {
-        return null;
+        return p.getKiller();
     }
 
     public boolean addPotionEffect(PotionEffect potionEffect) {
-        return false;
+        return p.addPotionEffect(potionEffect);
     }
 
     public boolean addPotionEffect(PotionEffect potionEffect, boolean b) {
-        return false;
+        return p.addPotionEffect(potionEffect, b);
     }
 
     public boolean addPotionEffects(Collection<PotionEffect> collection) {
-        return false;
+        return p.addPotionEffects(collection);
     }
 
     public boolean hasPotionEffect(PotionEffectType potionEffectType) {
-        return false;
+        return p.hasPotionEffect(potionEffectType);
     }
 
     public PotionEffect getPotionEffect(PotionEffectType potionEffectType) {
-        return null;
+        return p.getPotionEffect(potionEffectType);
     }
 
     public void removePotionEffect(PotionEffectType potionEffectType) {
-
+        p.removePotionEffect(potionEffectType);
     }
 
     public Collection<PotionEffect> getActivePotionEffects() {
-        return null;
+        return p.getActivePotionEffects();
     }
 
     public boolean hasLineOfSight(Entity entity) {
-        return false;
+        return p.hasLineOfSight(entity);
     }
 
     public boolean getRemoveWhenFarAway() {
-        return false;
+        return p.getRemoveWhenFarAway();
     }
 
     public void setRemoveWhenFarAway(boolean b) {
-
+        p.setRemoveWhenFarAway(b);
     }
 
     public EntityEquipment getEquipment() {
-        return null;
+        return p.getEquipment();
     }
 
     public void setCanPickupItems(boolean b) {
-
+        p.setCanPickupItems(b);
     }
 
     public boolean getCanPickupItems() {
-        return false;
+        return p.getCanPickupItems();
     }
 
     public boolean isLeashed() {
-        return false;
+        return p.isLeashed();
     }
 
     public Entity getLeashHolder() {
-        return null;
+        return p.getLeashHolder();
     }
 
     public boolean setLeashHolder(Entity entity) {
-        return false;
+        return p.setLeashHolder(entity);
     }
 
     public boolean isGliding() {
-        return false;
+        return p.isGliding();
     }
 
     public void setGliding(boolean b) {
-
+        p.setGliding(b);
     }
 
     public void setAI(boolean b) {
-
+        p.setAI(b);
     }
 
     public boolean hasAI() {
-        return false;
+        return p.hasAI();
     }
 
     public void setCollidable(boolean b) {
-
+        p.setCollidable(b);
     }
 
     public boolean isCollidable() {
-        return false;
+        return p.isCollidable();
     }
 
     public AttributeInstance getAttribute(Attribute attribute) {
-        return null;
+        return p.getAttribute(attribute);
     }
 
     public void damage(double v) {
-
+        p.damage(v);
     }
 
     public void damage(double v, Entity entity) {
-
+        p.damage(v, entity);
     }
 
     public double getHealth() {
-        return 0;
+        return p.getHealth();
     }
 
     public void setHealth(double v) {
-
+        p.setHealth(v);
     }
 
+    @Deprecated
     public double getMaxHealth() {
-        return 0;
+        return p.getMaxHealth();
     }
 
+    @Deprecated
     public void setMaxHealth(double v) {
-
+        p.setMaxHealth(v);
     }
 
+    @Deprecated
     public void resetMaxHealth() {
-
+        p.resetMaxHealth();
     }
 
     public Location getLocation() {
-        return null;
+        return p.getLocation();
     }
 
     public Location getLocation(Location location) {
-        return null;
+        return p.getLocation(location);
     }
 
     public void setVelocity(Vector vector) {
-
+    p.setVelocity(vector);
     }
 
     public Vector getVelocity() {
-        return null;
+        return p.getVelocity();
     }
 
     public double getHeight() {
-        return 0;
+        return p.getHeight();
     }
 
     public double getWidth() {
-        return 0;
+        return p.getWidth();
     }
 
     public boolean isOnGround() {
-        return false;
+        return p.isOnGround();
     }
 
     public World getWorld() {
-        return null;
+        return p.getWorld();
     }
 
     public boolean teleport(Location location) {
-        return false;
+        return p.teleport(location);
     }
 
     public boolean teleport(Location location, PlayerTeleportEvent.TeleportCause teleportCause) {
-        return false;
+        return p.teleport(location, teleportCause);
     }
 
     public boolean teleport(Entity entity) {
-        return false;
+        return p.teleport(entity);
     }
 
     public boolean teleport(Entity entity, PlayerTeleportEvent.TeleportCause teleportCause) {
-        return false;
+        return p.teleport(entity, teleportCause);
     }
 
     public List<Entity> getNearbyEntities(double v, double v1, double v2) {
-        return null;
+        return p.getNearbyEntities(v, v1, v2);
     }
 
     public int getEntityId() {
-        return 0;
+        return p.getEntityId();
     }
 
     public int getFireTicks() {
-        return 0;
+        return p.getFireTicks();
     }
 
     public int getMaxFireTicks() {
-        return 0;
+        return p.getMaxFireTicks();
     }
 
     public void setFireTicks(int i) {
-
+        p.setFireTicks(i);
     }
 
     public void remove() {
-
+        p.remove();
     }
 
     public boolean isDead() {
-        return false;
+        return p.isDead();
     }
 
     public boolean isValid() {
-        return false;
+        return p.isValid();
     }
 
     public void sendMessage(String s) {
-
+        p.sendMessage(s);
     }
 
     public void sendMessage(String[] strings) {
-
+        p.sendMessage(strings);
     }
 
     public Server getServer() {
-        return null;
+        return p.getServer();
     }
 
+    @Deprecated
     public Entity getPassenger() {
-        return null;
+        return p.getPassenger();
     }
 
+    @Deprecated
     public boolean setPassenger(Entity entity) {
-        return false;
+        return p.setPassenger(entity);
     }
 
     public List<Entity> getPassengers() {
-        return null;
+        return p.getPassengers();
     }
 
     public boolean addPassenger(Entity entity) {
-        return false;
+        return p.addPassenger(entity);
     }
 
     public boolean removePassenger(Entity entity) {
-        return false;
+        return p.removePassenger(entity);
     }
 
     public boolean isEmpty() {
-        return false;
+        return p.isEmpty();
     }
 
     public boolean eject() {
-        return false;
+        return p.eject();
     }
 
     public float getFallDistance() {
-        return 0;
+        return p.getFallDistance();
     }
 
     public void setFallDistance(float v) {
-
+        p.setFallDistance(v);
     }
 
     public void setLastDamageCause(EntityDamageEvent entityDamageEvent) {
-
+        p.setLastDamageCause(entityDamageEvent);
     }
 
     public EntityDamageEvent getLastDamageCause() {
-        return null;
+        return p.getLastDamageCause();
     }
 
     public UUID getUniqueId() {
-        return null;
+        return p.getUniqueId();
     }
 
     public int getTicksLived() {
-        return 0;
+        return p.getTicksLived();
     }
 
     public void setTicksLived(int i) {
-
+        p.setTicksLived(i);
     }
 
     public void playEffect(EntityEffect entityEffect) {
-
+        p.playEffect(entityEffect);
     }
 
     public EntityType getType() {
-        return null;
+        return p.getType();
     }
 
     public boolean isInsideVehicle() {
-        return false;
+        return p.isInsideVehicle();
     }
 
     public boolean leaveVehicle() {
-        return false;
+        return p.leaveVehicle();
     }
 
     public Entity getVehicle() {
-        return null;
+        return p.getVehicle();
     }
 
     public void setCustomNameVisible(boolean b) {
-
+        p.setCustomNameVisible(b);
     }
 
     public boolean isCustomNameVisible() {
-        return false;
+        return p.isCustomNameVisible();
     }
 
     public void setGlowing(boolean b) {
-
+        p.setGlowing(b);
     }
 
     public boolean isGlowing() {
-        return false;
+        return p.isGlowing();
     }
 
     public void setInvulnerable(boolean b) {
-
+        p.isInvulnerable();
     }
 
     public boolean isInvulnerable() {
-        return false;
+        return p.isInvulnerable();
     }
 
     public boolean isSilent() {
-        return false;
+        return p.isSilent();
     }
 
     public void setSilent(boolean b) {
-
+        p.setSilent(b);
     }
 
     public boolean hasGravity() {
-        return false;
+        return p.hasGravity();
     }
 
     public void setGravity(boolean b) {
-
+        p.setGravity(b);
     }
 
     public int getPortalCooldown() {
-        return 0;
+        return p.getPortalCooldown();
     }
 
     public void setPortalCooldown(int i) {
-
+        p.setPortalCooldown(i);
     }
 
     public Set<String> getScoreboardTags() {
-        return null;
+        return p.getScoreboardTags();
     }
 
     public boolean addScoreboardTag(String s) {
-        return false;
+        return p.addScoreboardTag(s);
     }
 
     public boolean removeScoreboardTag(String s) {
-        return false;
+        return p.removeScoreboardTag(s);
     }
 
     public PistonMoveReaction getPistonMoveReaction() {
-        return null;
+        return p.getPistonMoveReaction();
     }
 
     public String getCustomName() {
-        return null;
+        return p.getCustomName();
     }
 
     public void setCustomName(String s) {
-
+        p.setCustomName(s);
     }
 
     public void setMetadata(String s, MetadataValue metadataValue) {
-
+        p.setMetadata(s, metadataValue);
     }
 
     public List<MetadataValue> getMetadata(String s) {
-        return null;
+        return p.getMetadata(s);
     }
 
     public boolean hasMetadata(String s) {
-        return false;
+        return p.hasMetadata(s);
     }
 
     public void removeMetadata(String s, Plugin plugin) {
-
+        p.removeMetadata(s, plugin);
     }
 
     public boolean isPermissionSet(String s) {
-        return false;
+        return p.isPermissionSet(s);
     }
 
     public boolean isPermissionSet(Permission permission) {
-        return false;
+        return p.isPermissionSet(permission);
     }
 
     public boolean hasPermission(String s) {
-        return false;
+        return p.hasPermission(s);
     }
 
     public boolean hasPermission(Permission permission) {
-        return false;
+        return p.hasPermission(permission);
     }
 
     public PermissionAttachment addAttachment(Plugin plugin, String s, boolean b) {
-        return null;
+        return p.addAttachment(plugin, s, b);
     }
 
     public PermissionAttachment addAttachment(Plugin plugin) {
-        return null;
+        return p.addAttachment(plugin);
     }
 
     public PermissionAttachment addAttachment(Plugin plugin, String s, boolean b, int i) {
-        return null;
+        return p.addAttachment(plugin, s, b, i);
     }
 
     public PermissionAttachment addAttachment(Plugin plugin, int i) {
-        return null;
+        return p.addAttachment(plugin, i);
     }
 
     public void removeAttachment(PermissionAttachment permissionAttachment) {
-
+        p.removeAttachment(permissionAttachment);
     }
 
     public void recalculatePermissions() {
-
+        p.recalculatePermissions();
     }
 
     public Set<PermissionAttachmentInfo> getEffectivePermissions() {
-        return null;
+        return p.getEffectivePermissions();
     }
 
     public boolean isOp() {
-        return false;
+        return p.isOp();
     }
 
     public void setOp(boolean b) {
-
+        p.setOp(b);
     }
 
     public void sendPluginMessage(Plugin plugin, String s, byte[] bytes) {
-
+        p.sendPluginMessage(plugin, s, bytes);
     }
 
     public Set<String> getListeningPluginChannels() {
-        return null;
+        return p.getListeningPluginChannels();
     }
 
     public <T extends Projectile> T launchProjectile(Class<? extends T> aClass) {
-        return null;
+        return p.launchProjectile(aClass);
     }
 
     public <T extends Projectile> T launchProjectile(Class<? extends T> aClass, Vector vector) {
-        return null;
+        return p.launchProjectile(aClass, vector);
     }
 }
