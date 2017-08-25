@@ -1,7 +1,8 @@
-name: Core
+name: GSM
 version: 0.0.1
 description: Cyndergames Core
 author: Minidodo
 authors: [Scoocyjuice]
+depends: [Core, WorldEdit, WorldGuard]
 website: https://www.cyndergames.at/
-main: at.cyndergames.rp
+main: at.cyndergames.GSM

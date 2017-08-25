@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Money</artifactId>
+    <artifactId>GSM</artifactId>
     <dependencies>
         <dependency>
             <groupId>Minidodo</groupId>

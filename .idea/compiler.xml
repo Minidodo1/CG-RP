@@ -6,10 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Bank" />
         <module name="CG" />
         <module name="CG (1)" />
         <module name="Core" />
+        <module name="GSM" />
+        <module name="gsmanager" />
         <module name="Money" />
         <module name="tickets" />
       </profile>
@@ -17,6 +18,8 @@
     <bytecodeTargetLevel target="1.8">
       <module name="Bank" target="1.5" />
       <module name="Core" target="1.5" />
+      <module name="GSM" target="1.5" />
+      <module name="gsmanager" target="1.5" />
       <module name="Money" target="1.5" />
       <module name="tickets" target="1.5" />
     </bytecodeTargetLevel>

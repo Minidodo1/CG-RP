@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="FAWE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.idea/jars/FAWE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
