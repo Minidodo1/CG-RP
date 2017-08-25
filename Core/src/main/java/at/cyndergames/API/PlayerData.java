@@ -1,5 +1,6 @@
 package at.cyndergames.API;
 
+import at.cyndergames.rp;
 import org.bukkit.*;
 import org.bukkit.advancement.Advancement;
 import org.bukkit.advancement.AdvancementProgress;
@@ -33,7 +34,8 @@ import java.util.*;
 @SuppressWarnings("unused")
 public class PlayerData implements Player{
     private Player p;
-/*
+    private rp Core = new rp();
+/**
  *  Get The PlayerData Via the Mainclass,
  *  in the HashMap PD is every online Player
  *  as Key, and the PlayerData as Value.
@@ -42,6 +44,27 @@ public class PlayerData implements Player{
  *  is done.
  *
  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ *
+ *Here are the DEFAUlt Methods
+ *
+ **/
     public PlayerData(Player p){
     this.p = p;
     }

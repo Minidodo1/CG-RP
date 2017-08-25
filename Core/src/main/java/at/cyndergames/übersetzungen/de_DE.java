@@ -17,11 +17,6 @@ import java.util.HashMap;
  * #                          #
  */
 public class de_DE {
-    private String
-            PREFIX,
-            PREFIX_LOADING,
-            STOPP,
-            START;
     private HashMap<String, String> hm = new HashMap<String, String>();
     private config config = new config();
     private String Language = config.getConfig(new File("configs/Core/","config.yml")).getString("Language");
@@ -30,8 +25,8 @@ public class de_DE {
 
         cfg.addDefault("PREFIX", "§6[§2CG§6-§2Core§6]");
         cfg.addDefault("PREFIX_LOADING","[CG-Core]");
-        cfg.addDefault("STOPP", "stoppe Plugin...");
-        cfg.addDefault("START", "Beginne mit dem Laden des Plugins..");
+        cfg.addDefault("stop", "unloading plugin...");
+        cfg.addDefault("start", "loading plugin...");
         cfg.options().copyDefaults(true);
         config.saveConfig();
         loadconf();
@@ -39,14 +34,10 @@ public class de_DE {
         config.clean();
     }
     private void loadconf(){
-        //this.PREFIX = cfg.getString("PREFIX");
-        //this.PREFIX_LOADING = cfg.getString("PREFIX_LOADING");
-        //this.START = cfg.getString("START");
-        //this.STOPP = cfg.getString("STOPP");
         this.hm.put("PREFIX", cfg.getString("PREFIX"));
         this.hm.put("PREFIX_LOADING", cfg.getString("PREFIX_LOADING"));
-        this.hm.put("START", cfg.getString("START"));
-        this.hm.put("STOPP", cfg.getString("STOPP"));
+        this.hm.put("START", cfg.getString("start"));
+        this.hm.put("STOPP", cfg.getString("stop"));
     }
 
     public Object get(variablen key) {

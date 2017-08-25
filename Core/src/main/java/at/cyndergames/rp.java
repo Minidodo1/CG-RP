@@ -4,11 +4,7 @@ import at.cyndergames.API.*;
 import at.cyndergames.enums.variablen;
 import at.cyndergames.übersetzungen.de_DE;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.craftbukkit.v1_12_R1.util.CraftMagicNumbers;
-import org.bukkit.entity.Player;
-import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
-import org.bukkit.event.EventPriority;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.plugin.PluginManager;
@@ -33,9 +29,8 @@ public class rp extends JavaPlugin {
     private HashMap PD;
     @Override
     public void onEnable() {
-        languages.createconf();
-
         defaults();
+        languages.createconf();
         new sysout(languages.get(variablen.PREFIX_LOADING) +" "+ languages.get(variablen.START));
         this.sql = new MySQL();
         this.mAPI = new MoneyAPI(this);

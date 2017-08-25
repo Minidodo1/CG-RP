@@ -16,5 +16,6 @@
     <orderEntry type="library" scope="PROVIDED" name="worldguard-6.2.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="WorldEdit" level="project" />
     <orderEntry type="module" module-name="Core" />
+    <orderEntry type="module" module-name="Money" />
   </component>
 </module>

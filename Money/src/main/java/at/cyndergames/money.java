@@ -1,7 +1,7 @@
 package at.cyndergames;
 
 import org.bukkit.plugin.java.JavaPlugin;
-
+import at.cyndergames.rp;
 import java.io.File;
 
 /**
@@ -13,6 +13,8 @@ import java.io.File;
  * #                            #
  */
 public class money extends JavaPlugin {
+    private MoneyAPI mAPI;
+    private rp core;
     @Override
     public void onDisable() {
         super.onDisable();
@@ -20,7 +22,8 @@ public class money extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        super.onEnable();
+        core = new rp();
+        mAPI = core.getmAPI();
     }
 
 }

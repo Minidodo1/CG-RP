@@ -1,6 +1,6 @@
-package at.cyndergames.API;
+package at.cyndergames;
 
-import at.cyndergames.rp;
+import at.cyndergames.API.MySQL;
 import org.bukkit.entity.Player;
 
 /**

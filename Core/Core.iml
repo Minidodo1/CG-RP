@@ -13,5 +13,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="craftbukkit-1.12" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spigot-api-1.12-R0.1-SNAPSHOT-shaded" level="application" />
+    <orderEntry type="module" module-name="Money" />
   </component>
 </module>

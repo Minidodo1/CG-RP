@@ -14,5 +14,6 @@
     <orderEntry type="library" scope="PROVIDED" name="craftbukkit-1.12" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="spigot-api-1.12-R0.1-SNAPSHOT-shaded" level="project" />
     <orderEntry type="module" module-name="Core" />
+    <orderEntry type="module" module-name="Money" />
   </component>
 </module>

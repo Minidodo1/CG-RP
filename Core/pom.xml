@@ -10,6 +10,13 @@
     </parent>
     <artifactId>Core</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>Minidodo</groupId>
+            <artifactId>Money</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
