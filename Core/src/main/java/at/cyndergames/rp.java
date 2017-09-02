@@ -23,7 +23,6 @@ import java.util.HashMap;
  */
 public class rp extends JavaPlugin {
     private de_DE languages = new de_DE();
-    private MoneyAPI mAPI;
     private MySQL sql;
     private PlayerData pd;
     private HashMap PD;
@@ -33,7 +32,6 @@ public class rp extends JavaPlugin {
         languages.createconf();
         new sysout(languages.get(variablen.PREFIX_LOADING) +" "+ languages.get(variablen.START));
         this.sql = new MySQL();
-        this.mAPI = new MoneyAPI(this);
         PluginManager pm = this.getServer().getPluginManager();
         PD = new HashMap();
     }
@@ -49,10 +47,6 @@ public class rp extends JavaPlugin {
                 cfg.addDefault("Language","de_DE");
                 config.saveConfig();
 
-    }
-    @SuppressWarnings("unused")
-    public MoneyAPI getmAPI() {
-        return mAPI;
     }
     @SuppressWarnings("unused")
     public MySQL getSQL(){
