@@ -16,12 +16,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="Bank" target="1.5" />
-      <module name="Core" target="1.5" />
-      <module name="GSM" target="1.5" />
-      <module name="gsmanager" target="1.5" />
-      <module name="Money" target="1.5" />
-      <module name="tickets" target="1.5" />
+      <module name="Bank" target="1.8" />
+      <module name="Core" target="1.8" />
+      <module name="GSM" target="1.8" />
+      <module name="Money" target="1.8" />
+      <module name="tickets" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

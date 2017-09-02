@@ -23,7 +23,6 @@ public class money extends JavaPlugin {
     @Override
     public void onEnable() {
         core = new rp();
-        mAPI = core.getmAPI();
     }
 
 }
