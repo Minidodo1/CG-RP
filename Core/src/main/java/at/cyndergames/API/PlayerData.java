@@ -611,6 +611,11 @@ public class PlayerData implements Player{
         return p.getLocale();
     }
 
+    @Override
+    public Spigot spigot() {
+        return null;
+    }
+
     public Map<String, Object> serialize() {
         return p.serialize();
     }
@@ -762,7 +767,7 @@ public class PlayerData implements Player{
     }
 
     @Deprecated
-    public Block getTargetBlock(HashSet<Byte> hashSet, int i) {
+    public Block getTargetBlock(HashSet<Material> hashSet, int i) {
         return p.getTargetBlock(hashSet, i);
     }
 
@@ -771,7 +776,7 @@ public class PlayerData implements Player{
     }
 
     @Deprecated
-    public List<Block> getLastTwoTargetBlocks(HashSet<Byte> hashSet, int i) {
+    public List<Block> getLastTwoTargetBlocks(HashSet<Material> hashSet, int i) {
         return p.getLastTwoTargetBlocks(hashSet, i);
     }
 

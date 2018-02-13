@@ -13,8 +13,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="worldguard-6.2.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="WorldEdit" level="project" />
-    <orderEntry type="module" module-name="Core" scope="PROVIDED" />
-    <orderEntry type="module" module-name="Money" scope="PROVIDED" />
     <orderEntry type="library" name="spigot-1.12.2" level="project" />
+    <orderEntry type="module" module-name="Core" />
+    <orderEntry type="module" module-name="Money" />
   </component>
 </module>
